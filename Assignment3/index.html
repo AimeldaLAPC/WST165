@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filipino Food Gallery</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Filipino Food Gallery</h1>
+
+        <nav id="nav">
+            <ul>
+                <li><a href="https://aimeldalapc.github.io/WST165/">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Favorites</a></li>
+                <li><a href="#">Desserts</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Explore the Taste of the Philippines</h2>
+            <p>From savory classics to sweet desserts, Filipino food is full of flavor, color, and comfort.</p>
+        </section>
+
+        <section class="gallery">
+            <div class="gallery-card large">
+                <img src="images/adobo.jpg" alt="Chicken Adobo">
+                <h3>Chicken Adobo</h3>
+            </div>
+
+            <div class="gallery-card">
+                <img src="images/sinigang.jpg" alt="Sinigang">
+                <h3>Sinigang</h3>
+            </div>
+
+            <div class="gallery-card">
+                <img src="images/lumpia.webp" alt="Lumpia">
+                <h3>Lumpia</h3>
+            </div>
+
+            <div class="gallery-card">
+                <img src="images/pancit.jpg" alt="Pancit">
+                <h3>Pancit</h3>
+            </div>
+
+            <div class="gallery-card">
+                <img src="images/halo-halo.webp" alt="Halo-Halo">
+                <h3>Halo-Halo</h3>
+            </div>
+
+            <div class="gallery-card wide">
+                <img src="images/lechon.webp" alt="Lechon">
+                <h3>Lechon</h3>
+            </div>
+        </section>
+
+        <section class="about">
+            <h2>Why Filipino Food?</h2>
+            <p>
+                Filipino cuisine is a beautiful mix of salty, sour, sweet, and savory flavors.
+                Popular dishes like adobo, sinigang, lumpia, pancit, halo-halo, and lechon are often served during
+                family gatherings, celebrations, and holidays.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Filipino Food Gallery</p>
+    </footer>
+
+    <script>
+        let hamburger = document.getElementById('hamburger');
+        let nav = document.getElementById('nav');
+
+        hamburger.addEventListener('click', () => {
+            nav.classList.toggle('open');
+            hamburger.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
